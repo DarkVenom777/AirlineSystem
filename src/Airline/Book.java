@@ -389,6 +389,9 @@ public class Book extends javax.swing.JFrame {
                                      + " values('"+S5+"', '"+id+"','"+S1+"','Booked','"+date+"'); ";
                              c2.s.executeUpdate(Str2);
                              JOptionPane.showMessageDialog(null, "Ticket Booked");
+                             Book bk = new Book(name,city,passport,sex,id);
+                             bk.setVisible(true);
+                             setVisible(false);
                          }
                          catch(Exception e)
                          {
