@@ -386,7 +386,7 @@ public class Book extends javax.swing.JFrame {
                             // java.util.Date dater = new SimpleDateFormat("yyyy-MM-dd").parse(date);
                             // java.sql.Date sqlDate = new java.sql.Date(dater.getTime());
                              String Str2="Insert Into Bookings (BookedFor,BookedBy,fcode,Status,JourneyDate)"
-                                     + " values('"+S5+"', '"+name+"','"+S1+"','Booked','"+date+"'); ";
+                                     + " values('"+S5+"', '"+id+"','"+S1+"','Booked','"+date+"'); ";
                              c2.s.executeUpdate(Str2);
                              JOptionPane.showMessageDialog(null, "Ticket Booked");
                          }
